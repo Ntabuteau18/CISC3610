@@ -4,22 +4,9 @@
     box-sizing: border-box;
 }
 
-
-
-
 body{
-    margin: 0;
+    height: 100vh;
     background: skyblue;
     text-align: center;
 }
 
-h1{
-    font-family: Arial;
-    font-size: 55px;
-}
-
-P{
-    font-size: 30px;
-
-
-}

@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
-    height: 100vh;
-    background: skyblue;
+    background: skyblue url("../images/p5bg.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover; 
 }
 
 .dropdown{
@@ -38,6 +41,7 @@ align-items: center;
 flex-direction: column;
 border-radius: 5px;
 list-style: none;
+font-size: 20px;
 }
 
 .Assignments a,

@@ -178,3 +178,8 @@ ctxx.fillStyle = "grey";
 ctxx.arc(850, 55, 5, 0, 2 * Math.PI);
 ctxx.stroke();
 ctxx.fill();
+
+// text
+ctxx.fillStyle = "purple";
+ctxx.font = "20px Arial";
+ctxx.fillText("Peace Away from the City", 500, 20);

@@ -183,3 +183,55 @@ ctxx.fill();
 ctxx.fillStyle = "purple";
 ctxx.font = "20px Arial";
 ctxx.fillText("Peace Away from the City", 500, 20);
+
+// garage
+ctxx.beginPath()
+ctxx.fillStyle = "#ac9191";
+ctxx.rect(80, 400, 300, 400);
+ctxx.fillRect(80, 400, 300, 400);
+ctxx.stroke();
+
+// garage door
+ctxx.beginPath()
+ctxx.fillStyle = "#e7dede";
+ctxx.rect(130, 450, 200, 200);
+ctxx.fillRect(130, 450, 200, 200);
+ctxx.stroke();
+
+//doorknob garage right
+ctxx.fillStyle = "black";
+ctxx.beginPath();
+ctxx.arc(250, 530, 5, 0, 2 * Math.PI);
+ctxx.stroke();
+ctxx.fill();
+
+//doorknob left
+ctxx.fillStyle = "black";
+ctxx.beginPath();
+ctxx.arc(200, 530, 5, 0, 2 * Math.PI);
+ctxx.stroke();
+ctxx.fill();
+
+// garage door divider
+ctxx.beginPath()
+ctxx.rect(230, 450, 0, 200);
+ctxx.stroke();
+
+// garage door top
+ctxx.beginPath()
+ctxx.fillStyle = "#504545";
+ctxx.rect(50, 380, 360, 40);
+ctxx.fillRect(50, 380, 360, 40);
+ctxx.fill();
+ctxx.stroke();
+
+// clouds
+var x = 200
+for (i = 0; i < 5; i++) {
+  ctxx.fillStyle = "white";
+  ctxx.beginPath();
+  ctxx.arc(x, 100, 30, 0, 2 * Math.PI);
+  ctxx.arc(x+30, 100, 30, 0, 2 * Math.PI);
+  ctxx.fill();
+  x = x + 200;
+}

@@ -1,0 +1,17 @@
+#mycanvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid black;
+    width: 1200px;
+    height: 600px;
+    background: url("../images/icebergs.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover; 
+    border-radius: 5px;
+}
+
+

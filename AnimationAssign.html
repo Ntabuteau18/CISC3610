@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Assignment</title>
+    <link rel="stylesheet" href="css/AnimationAssgn.css">
+</head>
+<body>
+    <canvas id = 'canvas' style = "border:1px solid #000000;" ></canvas>
+    <script>
+        var canWidth = 1200;
+        var canHeight = 900;
+
+        // position where the frame will be drawn
+        var x = 0;
+        var y = 500;
+
+        var srcX;
+        var srcY;
+
+        var sheetWidth = 2351;
+        var sheetHeight = 900;
+
+        var cols= 6;
+        var rows = 2;
+
+        var width = sheetWidth / cols;
+        var height = sheetHeight /rows;
+
+        var currentFrame = 0;
+        var penguin = new Image();
+        penguin.src = '../images/slasher.png'
+
+        var canvas = document.getElementById("canvas");
+        canvas.width = canWidth;
+        canvas.height = canHeight;
+        var ctx = canvas.getContext('2d');
+
+       
+    
+    
+        function updateFrame(){
+            currentFrame = ++currentFrame % cols;
+            srcX = currentFrame * width;
+            srcY = 0;
+            ctx.clearRect(x,y,width,height)
+        }
+
+        function drawImage(){
+            updateFrame();
+            ctx.drawImage(penguin, srcX, srcY,width, height, x,y,width, height);
+
+        }
+
+        setInterval(function(){
+            drawImage();
+        },  100 );
+        
+        ctx.beginPath()
+        ctx.lineWidth = "2";
+        ctx.fillStyle = "#e7dede";
+        ctx.rect(300, 300, 350, 170);
+        ctx.fillRect(300, 300, 350, 170);
+        ctx.stroke();
+
+        ctx.fillStyle = "blue";
+        ctx.font = "20px Arial";
+        ctx.fillText("I Shall Protect this City", 380, 410);
+
+        
+        ctx.beginPath();
+        ctx.moveTo(300, 600);
+        ctx.lineTo(400, 470);
+        ctx.strokeStyle = 'white';
+        ctx.stroke();
+
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.moveTo(390, 520);
+        ctx.lineTo(360, 470);
+        ctx.stroke();
+        ctx.fill();
+
+
+    </script>
+    <center ><a href="index.html">HomePage</a></center>  
+
+</body>
+</html>

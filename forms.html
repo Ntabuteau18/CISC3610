@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <script src="forms.js"></script>
+    <title>Form </title>
+</head>
+<body>
+    <h1>HTML Form Submission</h1>
+    <div id=" "gameArea">
+       <p><canvas id="mycanvas"></canvas></p>
+        <form onsubmit="Submission(event)">     
+            <!-- Name -->
+            <label for ="name"></label> Enter Name:   
+            <input type="text" id="name" value="">
+            <br><br>
+
+            <!-- Background Color -->
+            <label for ="color"></label> Select Background color:   
+            <input type="color" name="bgdcolor"  id="bgdcolor" value="White">
+            <br><br>
+
+            <!-- Text Color -->
+            <label for ="color"></label> Select Text color:   
+            <input type="color" name="txtcolor"  id="txtcolor" value="Black">
+            <br><br>
+
+            <!-- Text Size -->
+            <label for="font-size">Select Font Size</label>
+            <input type="range" name="fontsize" id="fontsize" value="12"min="12" max="48" onchange="rangeC(this.value)">
+            <span id="sizespan"></span> <br />
+            <br><br>
+            
+            <!-- Radio buttons -->
+            <input type="radio" name ="Fontname"  value="Arial" id="option-1">
+            <label for=" "option-1>Arial font</label>
+            <br><br>
+            <input type="radio" name ="Fontname"  value="Georgia" id="option-2">
+            <label for=" "option-2>Georgia font</label>
+            <br><br>
+            <input type="radio" name ="Fontname"  value="Calibri" id="option-3">
+            <label for=" "option-3>Calibri font</label>
+            <br><br>
+
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit"/>
+            <br><br>
+
+            <!-- Reset button -->
+            <input type="reset" value="Reset">
+            <br><br>
+          </form>
+      </div>
+      <left ><a href="index.html">HomePage</a></left>  
+
+</body>
+</html>

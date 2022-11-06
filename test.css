@@ -1,0 +1,32 @@
+body {
+    background-color: azure;
+}
+
+#myCanvas {
+    border: 2px solid black;
+}
+
+#header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+#footer {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}

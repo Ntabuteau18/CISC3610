@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="test.css" />
+        <script src="test.js"></script>
+        <title>Text Form</title>
+    </head>
+    <body>
+        <header id="header">CISC 3610: Text Form</header>
+        <div id="content-area">
+            <p><canvas id="myCanvas"></canvas></p>
+            <form onsubmit="handleSubmit(event)">
+                <label for="name">Name</label><br />
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value=""
+                    placeholder="John Doe"
+                    required
+                    maxlength="30"
+                />
+                <br />
+                <label for="background-color">Background Color</label> <br />
+                <input
+                    type="color"
+                    name="bgd-color"
+                    id="bgd-color"
+                    value="#ffffff"
+                    required
+                />
+                <br />
+                <label for="text-color">Text Color</label> <br />
+                <input
+                    type="color"
+                    name="text-color"
+                    id="text-color"
+                    value="#000000"
+                    required
+                />
+                <br />
+                <label for="font-size"
+                    >Select Font Size Between 12px and 48px</label
+                ><br />
+                <input
+                    type="range"
+                    name="font-size"
+                    id="font-size"
+                    value="12"
+                    required
+                    min="12"
+                    max="48"
+                    onchange="handleRangeChange(value)"
+                />
+                <span id="font-size-span"></span> <br />
+
+                <div id="font-choices">
+                    <input
+                        type="radio"
+                        name="font-name"
+                        id="arial-btn"
+                        value="Arial"
+                        class="font-name"
+                        required
+                    />
+                    <label for="Arial">Arial</label><br />
+
+                    <input
+                        type="radio"
+                        name="font-name"
+                        id="verdana-btn"
+                        value="Verdana"
+                        class="font-name"
+                    />
+                    <label for="Arial">Verdana</label>
+
+                    <br />
+
+                    <input
+                        type="radio"
+                        name="font-name"
+                        id="tnr-btn"
+                        value="Times New Roman"
+                        class="font-name"
+                    />
+                    <label for="Arial">Times New Roman</label>
+                </div>
+                <br />
+                <input
+                    type="reset"
+                    value="Reset"
+                />
+                <input
+                    type="submit"
+                    value="Submit"
+                />
+            </form>
+        </div>
+        <footer id="footer">
+            Back to <a href="../../index.html">main</a> page
+        </footer>
+    </body>
+</html>

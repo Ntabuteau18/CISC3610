@@ -46,6 +46,7 @@
             ctx.clearRect(x,y,width,height)
         }
 
+        // draw the actual image in its proper place from the source
         function drawImage(){
             updateFrame();
             ctx.drawImage(penguin, srcX, srcY,width, height, x,y,width, height);

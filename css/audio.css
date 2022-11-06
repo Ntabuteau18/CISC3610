@@ -1,0 +1,35 @@
+body {
+    background-color: skyblue;
+}
+
+table {
+    margin: auto;
+    width: 20em;
+    height: 30em;
+    border: 5px solid blue;
+    background-image: url("../images/sky.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(123, 29, 167);
+}
+
+button {
+ border-radius: 10px;
+ cursor: pointer;
+}

@@ -4,11 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
+
+
+
+    "></script>
 </head>
 <body>
-    <canvas id="RadarChart" width="800" height="100"></canvas>
-    <canvas id="BarChart" width="500" height="150"></canvas>
+    <canvas id="RadarChart" width="500" height="150"></canvas>
+    <canvas id="BarChart" width="800" height="150"></canvas>
 
     
     <script>
@@ -18,7 +22,7 @@
     data: {
         labels: ['Strength','Intelligence','Agility', 'Leadership', 'Aesthetic','Endurance'],
         datasets: [{
-            label: "Video Game Protagonist Trait Point Allocation",
+            label: "Most Popular Video Game Character Traits",
             data: [25, 15, 0, 30, 24, 6],
             fill: true,
             backgroundColor: 'rgba(99, 114, 255, 0.2)',
@@ -44,13 +48,16 @@ var PieChart = new Chart(cx, {
                 {
                 label: "Favorite Video Game Genre",
                 backgroundColor: ["#2df300", "#eaff00f9","#f33860f9","#bd630ff9","#32bde3f9","#7f11e0"],
-                data: [2000,663,249 ,1101, 1784,869]
+                data: [2000,663,509,1101,1784,869]
                 }
             ]
             },
             options: {
-                legend: {
-             },
+                legend: { display: false },
+                title: {
+                display: true,
+                text: "Favorite Video Game Genres",
+            },
             }
         });
 

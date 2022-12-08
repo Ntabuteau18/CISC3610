@@ -1,0 +1,51 @@
+<html html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISC 3610 Form</title>
+   
+    <script src="textform.js"></script>
+    <link rel="stylesheet" href="CSS/textform.css">
+    
+</head>
+<body onload="changeEvent();">   
+    <form>
+        <center>
+            <label for="name">First Name:</label>
+            <input type="text" id="FirstName" name="FirstName" onchange="changeEvent();">
+       
+            <br>
+            <br>
+            <label for="BackgroundColor">Background Color:</label>
+            <input type="color" id="BackgroundColor" name="BackgroundColor" value="#ffffff" onchange="changeEvent();">
+        
+            <br>
+            <br>
+            <label for="TextColor">Text Color: </label>
+            <input type="color" id="TextColor" name="TextColor"  onchange="changeEvent();">
+        
+            <br>
+            <br>
+            <label for="FontSize">Font Size:</label>
+            <input type="range" id="FontSize" name="FontSize" min="12" max="48"  onchange="changeEvent();">
+
+            <br>
+            <label for="Fonts">Choose Font:</label>
+        <div id=FontTypes>
+            <input type="radio" id="Arial" name="Fchoice" onchange="changeEvent('Arial');">
+            <label for="Arial">Arial</label>
+            <input type="radio" id="Fantasy" name="Fchoice" onchange="changeEvent('Fantasy');">
+            <label for="Fantasy">Fantasy</label>
+            <input type="radio" id="Times New Roman" name="Fchoice" onchange="changeEvent('Times New Roman');">
+            <label for="Times New Roman">Times New Roman</label>
+        </div>
+        <br>
+            <input type="reset" id="reset" value="Reset">
+        <br>
+            <canvas id="canvas" width="800" height="600" ></canvas>
+
+        </center>
+    </form>   
+    </body>
+</html>

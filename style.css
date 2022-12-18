@@ -1,0 +1,105 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul li {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+}
+
+.canvas {
+    margin-left: 15px;
+    text-align: center;
+}
+
+canvas {
+    border: 3px solid black;
+    background-color: white;
+}
+
+button a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.btn {
+    display: inline;
+    justify-content: space-between;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
+    }
+    50% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 20px rgb(198, 156, 56);
+    }
+    100% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
+    }
+}
+
+.btn {
+    animation: glowing 1300ms infinite;
+}
+
+#speakBtn {
+    position: relative;
+    /* display: block; */
+    font-size: large;
+    padding: 9px 40px;
+    border-radius: 20px;
+    background-color: #171515;
+    color: whitesmoke;
+    border: none;
+}
+
+#speakBtn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border-radius: 50%; */
+    background: #d35400;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+#speakBtn:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #d35400;
+    filter: blur(3px);
+}
+
+#speakBtn:hover {
+    color: #ffa502;
+    box-shadow: 0 0 20px #d35400;
+    text-shadow: 0 0 20px #d35400;
+}

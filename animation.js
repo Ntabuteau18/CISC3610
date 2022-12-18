@@ -36,8 +36,6 @@ ctx.stroke();
 ctx.fillStyle = "black";
 ctx.font = "20px Arial";
 ctx.fillText("Where'd all my friends go", 300, 300);
-
-
 };
 
 animate();

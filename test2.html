@@ -1,22 +1,32 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Animation</title>
-    <link rel ="stylesheet" href = "./css/VideoAnimation.css">
+    <title>Voice Recognition</title>
+    <link rel="stylesheet" href="./test.css">
+    <style>
+        html {      height: 10px;   }
+        canvas{   border: 5px solid black;}
+    </style>
 </head>
 <body>
-    <h2>Video Animation: Space Chase</h2>
-
     <section class="section">
-        <div class="container has-text-centered">
-            <a class = "button is-link is-large is-responsive is-centered"href = "https://rachmink.github.io/portfolio-website-official/">Resume/Portfolio Website</a>
-        </div>
-        <div class="container has-text-centered">
-            <a class="button is-light is-large is-responsive is-centered" href="https://rachmink.github.io/CISC3610/">
-                Back to Portfolio</a>
-        </div>
+         <h1>Voice Recognition</h1>
+            <canvas id="canvas" width="600" height="600"></canvas>        
+            <div class = "instructions">
+                <h2>Instructions</h2>
+                    <li>Say "Help" for instructions.</li>
+                    <li>Say Size: followed by an integer to change size between 1 and 300</li>
+                    <li>Say the name of a color to change circle color.</li>  
+                    <li>Colors: red, blue, yellow, green, brown, grey, white, black, orange, purple, gold, teal, skyblue, pink, lime, cyan, silver, maroon, chocolate, navy, azure, crimson, smoke.</li>        
+            </div>            
+            <div class="button is-primary" id="button">Speak</div>
+            <em id="action"></em> 
+            <div id="output" class="hide"></div>
+            <script src="test2.js"></script>
+        <left ><a href="index.html">HomePage</a></left> 
     </section>
 </body>
 </html>
